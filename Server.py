@@ -53,11 +53,7 @@ def handle(client):
             elif command[1] == 'Please send the list of attendees.\n':
                 Clientlist(client)
 
-            elif private[0] == 'Private':
-                for n in private:
-                    if n in nicknames:
-                        privates.append(n)
-                broadcast_private(message)
+          
 
 
             elif hello[0] == 'Hello':
